@@ -1,5 +1,8 @@
 ---
-layout: default
+layout: post
+title: Hello World
+author: Stefan Peters
+redirect_from: hello/
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

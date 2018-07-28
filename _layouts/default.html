@@ -16,14 +16,29 @@
   <body>
     <div class="wrapper">
       <header>
-        {% if site.logo %}
-        <div id="logo">
-          <img src="{{site.logo | relative_url}}" width="50px">
+        <div id="header-top">
+          <a href="{{ "/" | absolute_url }}">
+            {% if site.logo %}
+            <div id="logo">
+              <img src="{{site.logo | relative_url}}" width="50px">
+            </div>
+            {% endif %}
+            <div id="title">
+              <h1>{{ site.title | default: site.github.repository_name }}</h1>
+              <small>{{ site.description | default: site.github.project_tagline }}</small>
+            </div>
+          </a>
         </div>
-        {% endif %}
-        <div id="title">
-          <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-          <small>{{ site.description | default: site.github.project_tagline }}</small>
+        <div id="navigation">
+          {% if site.navigation.size > 0 %}
+            {% for item in site.navigation %}
+            <span class="navigation-item">
+              <a href="{{ item.url | relative_url }}">
+                {{ item.name | escape }}
+              </a>
+            </span>
+            {% endfor %}
+          {% endif %}
         </div>
       </header>
       <section class="markdown-body">

@@ -1,3 +1,26 @@
 title: Exo Blog Theme
 logo: /assets/img/logo.png
 description: Exo Blog Theme is a theme for GitHub Pages.
+permalink: pretty
+plugins: [jekyll-paginate, jekyll-redirect-from]
+paginate: 10
+paginate_path: "/page/:num/"
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+    values:
+      layout: page
+navigation:
+  -
+    name: Home
+    url: /
+  -
+    name: About
+    url: /about/
