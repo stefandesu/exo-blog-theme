@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Markdown style -->
+    <link rel="stylesheet" href="{{ "/assets/css/github-markdown.css" | relative_url }}">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <!-- Import syntax highlighting -->
+    <link rel="stylesheet" href="{{ "/assets/css/native.css" | relative_url }}">
+    <!-- Import icon font -->
+    <link rel="stylesheet" href="{{ "/assets/css/fontello.css" | relative_url }}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        {% if site.logo %}
+        <div id="logo">
+          <img src="{{site.logo | relative_url}}" width="50px">
+        </div>
+        {% endif %}
+        <div id="title">
+          <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+          <small>{{ site.description | default: site.github.project_tagline }}</small>
+        </div>
+      </header>
+      <section class="markdown-body">
+        {{ content }}
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages.</small></p>
+      </footer>
+    </div>
+  </body>
+</html>

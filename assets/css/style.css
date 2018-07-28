@@ -1,0 +1,74 @@
+/*
+Background color: #222426
+Code background color: #3E3F3A / #323436?
+Accent color: #ED7615
+Accent dark: #C95000
+Text color: #C9CACC
+Side color: #666
+*/
+
+body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+  background-color: #222426;
+  color: #C9CACC;
+  font-family: "Menlo", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.725;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+small {
+  color: #666;
+}
+
+input[type=checkbox] {
+  color: green;
+}
+
+a:link, a:visited {
+  color: #ED7615;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #C95000;
+  text-decoration: none !important;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding: 15px;
+  }
+}
+
+header {
+  display: flex;
+  margin: 0 0 40px 0;
+}
+
+#logo {
+  flex: none;
+  margin-right: 20px;
+}
+header #logo {
+  filter: grayscale(100%);
+}
+header:hover #logo {
+  filter: none;
+}
+#title {
+  line-height: 1.2;
+  flex: 1;
+}
+#title h1 {
+  margin: 0;
+}
+#title a {
+  color: #C9CACC;
+}
