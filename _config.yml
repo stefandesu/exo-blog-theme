@@ -24,3 +24,5 @@ navigation:
   -
     name: About
     url: /about/
+footer: |
+  This is a footer. It can contain **Markdown**.

@@ -9,6 +9,8 @@ layout: default
   {{content}}
 </div>
 
-{% if page.tags %}
+{% if page.tags.size > 0 %}
   <small class="post-tags">tags: <em>{{ page.tags | join: "</em>, <em>" }}</em></small>
 {% endif %}
+
+<a href='{{site.url}}/'>back to home</a>

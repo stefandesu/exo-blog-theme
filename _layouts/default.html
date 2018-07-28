@@ -49,6 +49,9 @@
         <p><small>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></small></p>
         {% endif %}
         <p><small>Hosted on GitHub Pages.</small></p>
+        {% if site.footer %}
+        <p><small>{{ site.footer | markdownify }}</small></p>
+        {% endif %}
       </footer>
     </div>
   </body>

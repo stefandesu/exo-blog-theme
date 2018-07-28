@@ -99,13 +99,16 @@ header {
   list-style-type: none;
   padding-left: 5px !important;
 }
-.post-list-item {
-  display: flex;
+@media (min-width: 480px) {
+  .post-list-item {
+    display: flex;
+  }
 }
 .post-list-meta {
   margin-right: 20px;
 }
 .pagination {
+  margin-top: 10px;
   display: flex;
   font-size: 0.9em;
 }
