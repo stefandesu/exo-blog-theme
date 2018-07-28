@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    <title>{{ site.title }}</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +21,7 @@
           <a href="{{ "/" | absolute_url }}">
             {% if site.logo %}
             <div id="logo">
-              <img src="{{site.logo | relative_url}}" width="50px">
+              <img src="{{site.logo | relative_url}}" width="50" alt="Logo">
             </div>
             {% endif %}
             <div id="title">
@@ -46,11 +47,17 @@
       </section>
       <footer>
         {% if site.github.is_project_page %}
-        <p><small>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></small></p>
+        <p>
+          This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+        </p>
         {% endif %}
-        <p><small>Hosted on GitHub Pages.</small></p>
+        {% if site.github.url %}
+        <p>
+          Hosted on <a href="{{ site.github.url }}">GitHub Pages</a>.
+        </p>
+        {% endif %}
         {% if site.footer %}
-        <p><small>{{ site.footer | markdownify }}</small></p>
+        {{ site.footer | markdownify }}
         {% endif %}
       </footer>
     </div>
