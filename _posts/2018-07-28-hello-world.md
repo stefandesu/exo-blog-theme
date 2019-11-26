@@ -9,6 +9,8 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
 
+[Link to external page](https://apple.com).
+
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
@@ -101,6 +103,18 @@ end
 - [ ] Task 2
   - [ ] Test!
 - [ ] Task 3
+
+### Footnotes
+
+Some text[^1].
+
+Some other text[^2].
+
+The identifier in the square brackets does not have to be numeric[^my_footnote].
+
+[^1]: Some footnote.
+[^2]: Other footnote.
+[^my_footnote]: This also works fine.
 
 ### Small image
 
