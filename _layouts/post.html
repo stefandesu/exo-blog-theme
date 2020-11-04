@@ -13,4 +13,36 @@ layout: default
   <small class="post-tags">tags: <em>{{ page.tags | join: "</em>, <em>" }}</em></small>
 {% endif %}
 
+<div class="post-comments">
+  <h3>Comments</h3>
+  <p>
+    Please don't enter any personal information. All comments are public! You can edit or delete your comment within 15 minutes of submitting it.
+  </p>
+  <script data-isso="https://isso.exo.pm/"
+          data-isso-reply-to-self="true"
+          data-isso-max-comments-top="10"
+          src="https://isso.exo.pm/js/embed.min.js">
+  </script>
+  <div id="isso-thread"></div>
+</div>
+
 <a href='{{site.url}}/'>back to home</a>
+
+<style>
+  #isso-thread .input-wrapper {
+    font-size: 12px;
+    margin-right: 2px;
+  }
+  #isso-thread .textarea:focus {
+    color: black;
+  }
+  #isso-thread > h4 {
+    color: #C9CACC;
+  }
+  #isso-thread input[name="email"], #isso-thread input[name="website"], #isso-thread input[name="preview"] {
+    display: none;
+  }
+  #isso-thread input[type="submit"] {
+    font-size: 12px;
+  }
+</style>
