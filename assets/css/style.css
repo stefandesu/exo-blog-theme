@@ -3,8 +3,8 @@ Background color: #222426
 Code background color: #3E3F3A / #323436?
 Accent color: #ED7615
 Accent dark: #C95000
-Text color: #C9CACC
-Side color: #666
+Text color: #CCCDCF
+Side color: #8A8A8A
 */
 
 body {
@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
   padding: 45px;
   background-color: #222426;
-  color: #C9CACC;
+  color: #CCCDCF;
   font-family: "Menlo", monospace;
   font-size: 14px;
   font-weight: 400;
@@ -29,7 +29,7 @@ body {
 
 small, footer {
   font-size: 12px;
-  color: #666;
+  color: #8A8A8A;
 }
 footer {
   margin-top: 50px;
@@ -81,7 +81,7 @@ header {
   margin: 0;
 }
 #header-top a {
-  color: #C9CACC;
+  color: #CCCDCF;
 }
 
 #navigation {
