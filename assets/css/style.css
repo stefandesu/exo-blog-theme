@@ -95,6 +95,10 @@ header {
   border-right: 1px dotted #ED7615;
 }
 
+img {
+  height: auto;
+}
+
 /* Home */
 .home > h1:first {
   color: #ED7615;
